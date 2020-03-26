@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class city extends AppCompatActivity {
+public class City extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,12 +15,12 @@ public class city extends AppCompatActivity {
     }
     public void BackDashboard(View view)
     {
-        Intent intent = new Intent(this, dashboard.class);
+        Intent intent = new Intent(this, Dashboard.class);
         startActivity(intent);
     }
     public void Backcountry(View view)
     {
-        Intent intent = new Intent(this, country.class);
+        Intent intent = new Intent(this, Country.class);
         startActivity(intent);
     }
 }

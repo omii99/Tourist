@@ -6,16 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class signup extends AppCompatActivity {
+public class Dashboard extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_dashboard);
     }
-    public void BackSignin(View view)
+    public void Gocountry(View view)
     {
-        Intent intent = new Intent(this, Login.class);
+        Intent intent = new Intent(this, Country.class);
         startActivity(intent);
     }
 }

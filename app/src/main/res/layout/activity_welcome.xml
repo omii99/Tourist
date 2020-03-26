@@ -5,7 +5,7 @@
     android:background="@drawable/beach"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.tourist.welcome">
+    tools:context="com.example.tourist.Welcome">
 
     <TextView
         android:id="@+id/textView3"

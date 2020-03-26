@@ -7,7 +7,7 @@
     android:background="@drawable/signinbg"
     android:backgroundTint="#80FFFFFF"
     android:backgroundTintMode="src_over"
-    tools:context=".signup">
+    tools:context=".SignUp">
 
     <TextView
         android:id="@+id/textView4"

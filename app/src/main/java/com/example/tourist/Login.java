@@ -15,12 +15,12 @@ public class Login extends AppCompatActivity {
     }
     public void Movesignup(View view)
     {
-        Intent intent = new Intent(this, signup.class);
+        Intent intent = new Intent(this, SignUp.class);
         startActivity(intent);
     }
     public void Movedashboard(View view)
     {
-        Intent intent = new Intent(this, dashboard.class);
+        Intent intent = new Intent(this, Dashboard.class);
         startActivity(intent);
     }
 }

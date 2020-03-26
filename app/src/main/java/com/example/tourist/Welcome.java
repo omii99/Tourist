@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 import java.util.logging.Handler;
 
-public class welcome extends AppCompatActivity {
+public class Welcome extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
