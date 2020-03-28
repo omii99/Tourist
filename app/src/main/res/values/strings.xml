@@ -3,4 +3,13 @@
     <string name="action_settings">Settings</string>
     <string name="back">Back</string>
     <string name="dashboard">Dashboard</string>
+    <string name="Simply">Simply makes design good</string>
+    <string name="Hey_Tourist">Hey Tourist</string>
+    <string name="Clover">Clover</string>
+    <string name="bg">bg</string>
+    <string name="Explore">Explore</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="emailicon">emailicon</string>
+    <string name="passwordicon">passwordicon</string>
 </resources>
