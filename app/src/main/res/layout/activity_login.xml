@@ -80,22 +80,21 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/menus"
-        android:layout_width="395dp"
-        android:layout_height="301dp"
+        android:layout_width="339dp"
+        android:layout_height="245dp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="33dp"
         app:layout_constraintBottom_toTopOf="@+id/bgapp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textsplash"
-        app:layout_constraintVertical_bias="0.032">
+        app:layout_constraintVertical_bias="0.075">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnSignIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/signinbutton"
-            android:onClick="Movedashboard"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -103,16 +102,16 @@
             app:layout_constraintVertical_bias="0.983" />
 
         <EditText
-            android:id="@+id/editText7"
+            android:id="@+id/edtEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/email"
-            android:paddingLeft="40dp"
             android:autofillHints="@string/email"
-            android:inputType="textPersonName"
             android:background="@drawable/signemail"
-            app:layout_constraintBottom_toTopOf="@+id/button3"
+            android:ems="10"
+            android:hint="@string/phone"
+            android:inputType="textPersonName"
+            android:paddingLeft="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
@@ -120,21 +119,21 @@
             app:layout_constraintVertical_bias="0.085" />
 
         <EditText
-            android:id="@+id/editText8"
+            android:id="@+id/edtPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="72dp"
-            android:ems="10"
             android:autofillHints="@string/password"
-            android:hint="@string/password"
-            android:paddingLeft="40dp"
             android:background="@drawable/signinpassword"
+            android:ems="10"
+            android:hint="@string/password"
             android:inputType="textPassword"
-            app:layout_constraintBottom_toTopOf="@+id/button3"
+            android:paddingLeft="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/editText7"
+            app:layout_constraintTop_toTopOf="@+id/edtEmail"
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
@@ -143,12 +142,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="2dp"
-            app:layout_constraintBottom_toTopOf="@+id/editText7"
-            app:layout_constraintEnd_toEndOf="@+id/editText7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editText7"
-            app:layout_constraintTop_toTopOf="parent"
             android:contentDescription="@string/emailicon"
+            app:layout_constraintBottom_toTopOf="@+id/edtEmail"
+            app:layout_constraintEnd_toEndOf="@+id/edtEmail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edtEmail"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/mail" />
 
@@ -156,11 +155,11 @@
             android:id="@+id/imageView24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="36dp"
             android:contentDescription="@string/passwordicon"
-            app:layout_constraintEnd_toEndOf="@+id/editText8"
+            app:layout_constraintEnd_toEndOf="@+id/edtPassword"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editText8"
+            app:layout_constraintStart_toStartOf="@+id/edtPassword"
             app:layout_constraintTop_toBottomOf="@+id/imageView22"
             app:srcCompat="@drawable/spam" />
 
@@ -169,10 +168,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="Movesignup"
-            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText8"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword"
             app:srcCompat="@drawable/clickhere" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
