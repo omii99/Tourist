@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import com.example.tourist.Model.Tourist;
+import com.example.tourist.Model.Users;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -28,14 +28,14 @@ public class SignUp extends AppCompatActivity {
 
         //Assign Button and texts id to variables
         edtName = (EditText)findViewById(R.id.edtName);
-        edtPhone = (EditText) findViewById(R.id.edtEmail);
+        edtPhone = (EditText) findViewById(R.id.edtPhone);
         edtEmail =(EditText) findViewById(R.id.edtEmail);
         edtPassword = (EditText)findViewById(R.id.edtPassword);
         btnSignUp = (Button)findViewById(R.id.btnSignUp);
 
         //Init firebase object
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference table_Tourist = database.getReference("Tourist");
+        final DatabaseReference table_Tourist = database.getReference("Users");
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,9 +53,9 @@ public class SignUp extends AppCompatActivity {
                         else
                         {
                             mDialog.dismiss();
-                            Tourist tourist = new Tourist(edtEmail.getText().toString(),edtName.getText().toString(),edtPassword.getText().toString());
-                            table_Tourist.child(edtPhone.getText().toString()).setValue(tourist);
-                            //Toast.makeText(SignUp.this, "Registration Complete !", Toast.LENGTH_SHORT).show();
+                            Users users = new Users(edtName.getText().toString(),edtPassword.getText().toString(),edtEmail.getText().toString());
+                            table_Tourist.child(edtPhone.getText().toString()).setValue(users);
+                            Toast.makeText(SignUp.this, "Registration Complete !", Toast.LENGTH_SHORT).show();
                             {Intent intent = new Intent(SignUp.this, Dashboard.class);startActivity(intent);}
                         }
                     }

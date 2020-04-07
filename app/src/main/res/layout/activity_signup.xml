@@ -23,6 +23,7 @@
         android:id="@+id/edtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autofillHints="@string/Name"
         android:background="@drawable/signupfield"
         android:ems="10"
         android:hint="@string/Name"
@@ -39,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:background="@drawable/signupfield"
+        android:autofillHints="@string/email"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
@@ -50,6 +52,7 @@
 
     <EditText
         android:id="@+id/edtPassword"
+        android:autofillHints="@string/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/signupfield"
@@ -78,6 +81,7 @@
 
     <ImageView
         android:id="@+id/imageView3"
+        android:contentDescription="@string/back"
         android:layout_width="13dp"
         android:layout_height="12dp"
         android:onClick="BackSignin"
@@ -91,12 +95,13 @@
 
     <EditText
         android:id="@+id/edtPhone"
+        android:autofillHints="@string/back"
         android:layout_width="322dp"
         android:layout_height="43dp"
         android:background="@drawable/signupfield"
         android:ems="10"
         android:hint="@string/phone"
-        android:inputType="textPersonName"
+        android:inputType="phone"
         app:layout_constraintBottom_toTopOf="@+id/edtEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.471"

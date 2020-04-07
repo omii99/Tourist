@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.tourist.Model.Tourist;
+import com.example.tourist.Model.Users;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -48,7 +49,7 @@ public class Login extends AppCompatActivity {
         //Init firebase and assign the Object
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         //Reffer a specific child
-        final DatabaseReference table_User = database.getReference("Tourist");
+        final DatabaseReference table_User = database.getReference("Users");
         //set the onClick Listner to button
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,8 +64,8 @@ public class Login extends AppCompatActivity {
                         if(dataSnapshot.child(edtPhone.getText().toString()).exists()) {
                             // Get User Info
                             mDialog.dismiss();
-                            Tourist tourist = dataSnapshot.child(edtPhone.getText().toString()).getValue(Tourist.class);
-                            if (tourist.getPassword().equals(edtPassword.getText().toString())) {
+                            Users users = dataSnapshot.child(edtPhone.getText().toString()).getValue(Users.class);
+                            if (users.getPassword().equals(edtPassword.getText().toString())) {
                                 Toast.makeText(Login.this, "Sign In SuccessFully !", Toast.LENGTH_SHORT).show();
                                 {Intent intent = new Intent(Login.this, Dashboard.class);startActivity(intent);}
                             }
