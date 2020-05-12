@@ -12,4 +12,12 @@
     <string name="password">password</string>
     <string name="emailicon">emailicon</string>
     <string name="passwordicon">passwordicon</string>
+    <string name="Name">Name</string>
+    <string name="phone">phone</string>
+    <string name="FavIcon">FavIcon</string>
+    <string name="CountryImg">CountryImg</string>
+    <string name="CountryName">Country Name</string>
+    <string name="CapitalCity">Capital City</string>
+    <string name="CountryDesc">Description</string>
+    <string name="AddNote">Add Note</string>
 </resources>
