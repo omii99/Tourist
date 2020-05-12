@@ -9,19 +9,19 @@
         android:roundIcon="@drawable/europe"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".City"/>
+        <activity android:name=".City"></activity>
         <activity android:name=".Country" />
         <activity android:name=".Dashboard" />
         <activity android:name=".SignUp" />
         <activity android:name=".Welcome"/>
         <activity android:name=".Login">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>
